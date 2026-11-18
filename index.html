@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#fff0f5">
+  <title>For Riya, My Princess ✨</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&family=Sacramento&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="ambient" aria-hidden="true"></div>
+  <div class="sparkles" id="sparkles" aria-hidden="true"></div>
+  <button class="music-toggle" id="musicToggle" aria-label="Toggle calm background music">♫ <span>calm vibes</span></button>
+
+  <main>
+    <section class="screen active" id="welcome">
+      <div class="tiny-tag">a little world made just for you</div>
+      <div class="castle" aria-hidden="true">
+        <div class="castle-roof"></div><div class="castle-body">
+          <div class="tower left"></div><div class="tower right"></div>
+          <div class="gate"><span>♡</span></div>
+        </div>
+        <div class="castle-stars">✦　✧　♡　✧　✦</div>
+      </div>
+      <p class="eyebrow">KNOCK KNOCK, PRINCESS</p>
+      <h1>Someone made<br><em>a tiny surprise</em><br>for you...</h1>
+      <p class="soft">Ready to step into your little fairytale, Riya?</p>
+      <button class="primary" data-next="gift">Tap to open the gate <span>♡</span></button>
+      <p class="footnote">made with a little bit of care by Ankuuu</p>
+    </section>
+
+    <section class="screen" id="gift">
+      <p class="eyebrow">A LITTLE SOMETHING FOR YOU</p>
+      <h2>Guess what's<br><em>inside?</em></h2>
+      <p class="soft">A gift wrapped with smiles, memories and good wishes.</p>
+      <button class="gift-wrap" id="giftButton" aria-label="Open the gift">
+        <span class="gift-bow">✿</span><span class="gift-box"><i></i></span>
+        <span class="gift-hint">tap me!</span>
+      </button>
+      <button class="text-button" data-next="memories">Open your surprise →</button>
+    </section>
+
+    <section class="screen" id="memories">
+      <p class="eyebrow">OUR LITTLE MEMORY LANE</p>
+      <h2>My favourite<br><em>kind of chaos</em></h2>
+      <p class="soft">Some moments deserve their own little frame.</p>
+      <div class="photo-grid">
+        <figure class="polaroid tilt-left"><img src="assets/riya-01.jpg" alt="Riya smiling in sunglasses"><figcaption>main character energy ✨</figcaption></figure>
+        <figure class="polaroid tilt-right"><img src="assets/together-02.jpg" alt="A selfie together"><figcaption>one for the memories ♡</figcaption></figure>
+        <figure class="polaroid tilt-right"><img src="assets/riya-03.jpg" alt="Riya outdoors"><figcaption>never stop being you</figcaption></figure>
+        <figure class="polaroid tilt-left"><img src="assets/riya-04.jpg" alt="A favourite outfit moment"><figcaption>pretty in every little way</figcaption></figure>
+      </div>
+      <p class="soft small">More memories to make. More dreams to chase. 🌷</p>
+      <button class="primary" data-next="letter">There's a note for you <span>♡</span></button>
+    </section>
+
+    <section class="screen" id="letter">
+      <p class="eyebrow">A NOTE FROM ANKUUU</p>
+      <h2>For my<br><em>Riya princess</em></h2>
+      <article class="letter-card">
+        <div class="letter-flower">❀</div>
+        <p>Hey Riya,</p>
+        <p>First of all, happy Princess Day to my favourite human. You deserve all the softness, happiness and beautiful things this world has to offer.</p>
+        <p>I know you have dreams waiting for you, and I genuinely want to see you achieve every single one of them. Take your time, focus on yourself, grow, explore and become the person you imagine yourself being. I'll always be cheering for you.</p>
+        <p>No pressure, no expectations and no need to figure everything out today. Just know that you are special to me, and I'm grateful for all the little moments, silly laughs and memories we share.</p>
+        <p>Keep that smile, keep that spark, and never stop believing in yourself. Your story is yours to write, princess. Make it beautiful. ♡</p>
+        <p class="signoff">Always cheering for you,<br><span>Ankuuu ♡</span></p>
+      </article>
+      <button class="primary" data-next="final">One last thing... <span>✧</span></button>
+    </section>
+
+    <section class="screen" id="final">
+      <div class="final-heart">♡</div>
+      <p class="eyebrow">A LITTLE REMINDER</p>
+      <h1 class="final-title">Always my<br><em>princess, Riya.</em></h1>
+      <p class="final-message">Today, tomorrow and whenever you need a reminder:<br>you deserve to see your dreams come true.</p>
+      <div class="final-bloom">✿　♡　✿</div>
+      <p class="signature">with lots of good wishes,<br><span>Ankuuu</span></p>
+      <button class="text-button" id="restart">↶ Visit our little world again</button>
+    </section>
+  </main>
+  <div class="toast" id="toast" role="status">A little love, just for you ♡</div>
+  <script src="script.js"></script>
+</body>
+</html>
